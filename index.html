@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEDA's Personal Website</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="icon" type="image/png" href="./assets/chicken-face.png">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="name-logo">CEDA</div>
+        <div>
+            <ul class="nav-links">
+                <li><a class="nav-a" href="#bio">Bio / 简历</a></li>
+                <li><a class="nav-a" target="_blank" href="https://cedapek.github.io/CEDA.github.io/">Activity Record / 活动记录</a></li>
+                <li><a class="nav-a" href="#project">Project / 项目</a></li>
+                <li><a class="nav-a" href="#contact">Contact / 联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="name-logo">CEDA</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a class="nav-a" href="#bio" onclick="toggleMenu()">Bio</a></li>
+                <li><a class="nav-a" href="https://cedapek.github.io/CEDA.github.io/" onclick="toggleMenu()" target="_blank">Activity Record</a></li>
+                <li><a class="nav-a" href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a class="nav-a" href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profPic.png" alt="CEDA's profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section_text__p1">Hello, I'm</p>
+            <h1 class="ceda-h1">CEDA</h1>
+            <p class="section__text__p2">Full time student at <a id="zju" href="https://en.wikipedia.org/wiki/Zhejiang_University" target="_blank">Zhejiang University</a></p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf', '_blank')">Download CV / 下载履历</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me / 联系我</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon" onclick="window.open('https://www.linkedin.com/in/jonathan-salim-29495031b/', '_blank')">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="window.open('https://github.com/CEDApek', '_blank')">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="bio">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About <span class="me-underline">Me</span> / 理解<span class="me-underline">我</span></h1>
+        <div class="section-container">
+            <div class="section___pic-container">
+                <img src="./assets/about-me.jpg" alt="profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon-nonclickable">
+                        <h3>Learning Path</h3>
+                        <p>Penetration Testing<br />Basic Web Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Experience Icon" class="icon-nonclickable">
+                        <h3>Education</h3>
+                        <p>Zhejiang University<br />2023 - Now</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="paragraph">I am a full-time student at Zhejiang University, specializing in cybersecurity, with a particular focus on web development penetration testing. In my free time, I enjoy tackling <a href="https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)#:~:text=Capture%20the%20Flag%20(CTF)%20in,purposefully-vulnerable%20programs%20or%20websites." target="_blank">CTF challenges</a> and managing my portfolio website. On weekends, you'll often find me at the gym or playing basketball with friends. I'm currently based in Hangzhou, China and Jakarta, Indonesia, and I'm open to remote internship opportunities during the summer break.</p>
+                </div>
+            </div>
+        </div>                                              <!--here both .icon and .arrow might apply-->
+        <img src="./assets/arrow.png" 
+        alt="arrow-icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'"
+        /> 
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Web Development <span class="title-and">&</span> Technical Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Web Exploit / <span>网页漏洞利用</span></h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/html.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>> 2k line</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/css.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>> 1.5k line</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/javascript.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>> 1k line</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/php.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>PHP</h3>
+                                <p>> 500 line</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/mysql.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>> 500 line</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">General Skills / <span>通用技能</span></h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/c.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>C</h3>
+                                <p>> 10k line</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/python.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p>> 7k line</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/masm.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>MASM x86</h3>
+                                <p>> 1k line</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/bash.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Bash</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/debugger.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>32/64b Debugger</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="arrow-icon" 
+        class="icon arrow" 
+        onclick="location.href='./#project'"
+        /> 
+    </section>
+
+    <section id="project">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects / 项目</h1>
+        <div class="experience-details-container">
+            <div class="about-containers overflow-scroll">
+                <div class="details-container-project color-container">
+                    <div class="article-container">
+                        <img 
+                        src="./assets/ctf.png"
+                        alt="Project 1"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">CTF Write Ups</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="window.open('https://github.com/CEDApek/CEDA_webCTF_writeUp/tree/main', '_blank')">Github</button>
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="window.open('https://cedapek.github.io/CEDA.github.io/', '_blank')">What is Write Ups?</button>
+                    </div>
+                </div>
+                <div class="details-container-project color-container">
+                    <div class="article-container">
+                        <img 
+                        src="./assets/notes.png"
+                        alt="Project 2"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Class Notes (.md)</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="window.open('https://github.com/CEDApek/classNotes_ZJU', '_blank')">Github</button>
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="window.open('https://typora.io', '_blank')">Typora Donwload</button>
+                    </div>
+                </div>
+                <div class="details-container-project color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/comingsoon.png"
+                    alt="Project 3"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Upcoming Projects</h2>
+                <div class="btn-container">
+                    <h4>Coming Soon</h4>
+                    <!-- <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open('', '_blank')">Github</button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open('', '_blank')">PDF Write</button> -->
+                </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="arrow-icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'"
+        /> 
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me / 联系我</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png"
+                alt="Email Icon"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:salimjonathan988@gmail.com">salimjonathan988@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin-dark.png"
+                alt="Linkedin Icon"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/jonathan-salim-29495031b/" target="_blank">Jonathan Salim</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/wechat.png"
+                alt="WeChat Icon"
+                class="icon contact-icon"
+                />
+                <p><a href="#" id="copyText" onclick="copyToClipboard()">jonathansalim123</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav class="footer-nav">
+            <div class="nav-links-container">
+                <ul class="nav-links-footer">
+                    <li><a class="nav-a-footer" href="#bio">Bio / 简历</a></li>
+                    <li><a class="nav-a-footer" target="_blank" href="https://cedapek.github.io/CEDA.github.io/">Activity Record / 活动记录</a></li>
+                    <li><a class="nav-a-footer" href="#project">Project / 项目</a></li>
+                    <li><a class="nav-a-footer" href="#contact">Contact / 联系</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169 2024 CEDA. All Rights Reserved.</p>
+    </footer>
+    <script src="burger-index.js"></script>
+    <script src="copy.js"></script>
+</body>
+</html>
